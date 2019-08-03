@@ -1,0 +1,13 @@
+function thingy() {
+    let bigArr = new Array(3).fill(1);
+    for(let i=0;i<5;i++) {
+        bigArr.push(i);
+    }
+    console.log('test')
+    return (answer) => { return bigArr[answer] }
+}
+
+const answer = thingy();
+answer(0);
+answer(3);
+console.log(answer(6));
