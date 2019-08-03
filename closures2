@@ -1,0 +1,11 @@
+let array = [0, 1, 2, 3, 4];
+
+for (let i=0; i<array.length; i++) {
+setTimeout(function() {
+  console.log('I am at index ' +i)}, 5000);
+};
+
+const array1 = [1, 2, 3, 4];
+for(var k = 0; k<array1.length;k++) {
+  setTimeout(function() {console.log('I am at index ' +k)}, 3000);
+};
