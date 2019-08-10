@@ -1,0 +1,7 @@
+let date = new Date();
+
+Date.prototype.lastYear = function() {
+  return date.toString().replace(date.getFullYear(), (date.getFullYear()-1));
+}
+
+console.log(date.lastYear());
